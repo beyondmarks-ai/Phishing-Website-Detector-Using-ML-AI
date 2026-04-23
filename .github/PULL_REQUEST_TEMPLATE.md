@@ -10,7 +10,7 @@ Briefly describe what this PR changes and why
 - [ ] Tests pass (`make test`)
 - [ ] Lint checks pass (`gofmt`, `golint`, etc.)
 - [ ] Relevant docs updated
-- [ ] PR linked to a GitHub issue (if applicable)
+- [ ] PR linked to a tracked issue or task (if applicable)
 
 ## Related Issues
 

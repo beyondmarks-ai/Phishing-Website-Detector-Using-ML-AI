@@ -15,8 +15,8 @@ We provide security updates for the following versions:
 
 If you discover a security vulnerability in this project:
 
-1. **Do not open a GitHub issue or PR**
-2. **Email us directly** at: [hi@abhizaik.com]
+1. **Do not disclose it in public forums** (issues, chat, or social media) before it is addressed
+2. **Report it privately** to Beyond Marks AI Academy through your course or program’s designated security contact
 3. Include:
    - A detailed description
    - Steps to reproduce

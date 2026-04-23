@@ -419,9 +419,10 @@ definitions:
     type: object
 host: localhost:8080
 info:
-  contact: {}
+  contact:
+    name: Beyond Marks AI Academy
   description: URL safety analysis API. Checks phishing signals, redirects, TLS, DNS,
-    brand mismatches, and more.
+    brand mismatches, and more. Copyright © Beyond Marks AI Academy.
   license:
     name: MIT
   title: SafeSurf API

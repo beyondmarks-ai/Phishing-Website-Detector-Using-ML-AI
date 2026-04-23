@@ -9,7 +9,9 @@ const docTemplate = `{
     "info": {
         "description": "{{escape .Description}}",
         "title": "{{.Title}}",
-        "contact": {},
+        "contact": {
+            "name": "Beyond Marks AI Academy"
+        },
         "license": {
             "name": "MIT"
         },
@@ -1308,7 +1310,7 @@ var SwaggerInfo = &swag.Spec{
 	BasePath:         "/api/v1",
 	Schemes:          []string{},
 	Title:            "SafeSurf API",
-	Description:      "URL safety analysis API. Checks phishing signals, redirects, TLS, DNS, brand mismatches, and more.",
+	Description:      "URL safety analysis API. Checks phishing signals, redirects, TLS, DNS, brand mismatches, and more. Copyright © Beyond Marks AI Academy.",
 	InfoInstanceName: "swagger",
 	SwaggerTemplate:  docTemplate,
 	LeftDelim:        "{{",

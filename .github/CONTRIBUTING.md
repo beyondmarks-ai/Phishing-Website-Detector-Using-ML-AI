@@ -14,19 +14,19 @@ We welcome bug reports, feature requests, code, documentation, and testing help.
 
 ##  How to Contribute
 
-1. Fork the repo
-2. Clone your fork and create a branch:
+1. Create a branch from the main line of development:
    ```bash
    git checkout -b your-feature-name
-    ```
+   ```
 
-3. Make your changes
-4. Run tests:
+2. Make your changes
+3. Run tests (from the repo root, with `make` available):
 
    ```bash
-   make test
+   make local-test
    ```
-5. Push to your fork and open a Pull Request
+
+4. Submit your changes through your team’s usual review process (for example, a pull request or internal code review).
 
 
 ##  Development Setup
@@ -68,8 +68,8 @@ docker-compose -f docker/docker-compose.dev.yml up --build
 
 ## Reporting Bugs
 
-1. Search existing issues first
-2. If not found, open a new issue
+1. Search existing bug reports or task tickets first
+2. If not found, open a new report with your team’s process
 3. Include:
 
    * Steps to reproduce

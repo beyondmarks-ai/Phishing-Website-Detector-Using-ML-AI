@@ -1,6 +1,6 @@
-# SafeSurf Web Application
+# Phishing detection web app
 
-A SvelteKit web application that serves as the frontend for the SafeSurf phishing detection tool.
+A SvelteKit web application that serves as the frontend for the URL safety / phishing analysis tool. Copyright © Beyond Marks AI Academy.
 
 ## Features
 

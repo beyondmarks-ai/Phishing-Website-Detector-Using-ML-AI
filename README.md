@@ -9,7 +9,6 @@ Open-source and production-ready. Analyze URLs in under a second with transparen
 [![Go](https://img.shields.io/badge/Go-1.24+-00ADD8?logo=go\&logoColor=white)](https://go.dev)
 [![Svelte](https://img.shields.io/badge/Svelte-5-orange?logo=svelte)](https://svelte.dev)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![GitHub stars](https://img.shields.io/github/stars/abhizaik/phishing-detection?style=social)](https://github.com/abhizaik/phishing-detection)
 
 [⚡ Quick Start](#quick-start) · [🏛 Architecture](#architecture) · [📚 Docs](#documentation) · [🤝 Contributing](#contributing) · [🌍 Community](#community)
 
@@ -29,12 +28,7 @@ Open-source and production-ready. Analyze URLs in under a second with transparen
 
 Full setup: [docs/setup.md](docs/setup.md) 
 
-1. Clone the repo
-
-```bash
-git clone https://github.com/abhizaik/phishing-detection.git
-cd phishing-detection
-```
+1. Obtain a copy of the project source and open the project root directory.
 2. Start the application (backend + UI via Docker)
 
 Prerequisite: Docker must be installed and running.
@@ -106,7 +100,7 @@ This engine fills that gap by providing:
 
 **Students & researchers**
 
-* Use a real-world, production-grade reference for **academic or security projects**. Academic or research use of this project must cite this repository (see [CITATION.cff](CITATION.cff)).
+* Use a real-world, production-grade reference for **academic or security projects**. Academic or research use of this work should cite **Beyond Marks AI Academy** (see [CITATION.cff](CITATION.cff)).
 
 
 
@@ -371,7 +365,7 @@ Exact performance depends on enabled analyzers and network conditions.
 
 All documentation is under `docs/`. Start here [docs/README.md](docs/README.md) 
 
-[Interactive API docs (Swagger UI)](https://api.safesurf.xorwave.com/swagger/index.html)
+With the API server running locally, open [http://localhost:8080/swagger/index.html](http://localhost:8080/swagger/index.html) for interactive API docs (Swagger UI).
 
 Full endpoint reference: [docs/api.md](docs/api.md)
 
@@ -379,33 +373,8 @@ Full endpoint reference: [docs/api.md](docs/api.md)
 
 ## Contributing
 
-Bug reports, feature requests, and pull requests are welcome.
+Bug reports, feature requests, and code contributions are welcome. See [CONTRIBUTING.md](.github/CONTRIBUTING.md) for how to get started.
 
-Use [GitHub Issues](https://github.com/abhizaik/phishing-detection/issues) to report bugs or suggest features. For code contributions, see [CONTRIBUTING.md](.github/CONTRIBUTING.md).
+## Copyright
 
-
-
-
-## Community
-
-**If you found this project helpful, consider giving it a star.** It directly helps visibility and continued development.
-
-Have bugs, ideas, or feature requests?
-Open an [issue](https://github.com/abhizaik/phishing-detection/issues) or start a [discussion](https://github.com/abhizaik/phishing-detection/discussions). Contributions and feedback are welcome.
-
-Thanks for helping make the web safer.
-
-
-
-
-<div align="center">
-  <a href="https://star-history.com/#abhizaik/phishing-detection&Date">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=abhizaik/phishing-detection&type=Date&theme=dark" />
-      <source media="(prefers-color-scheme: light)" srcset="https://api/star-history.com/svg?repos=abhizaik/phishing-detection&type=Date" />
-      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=abhizaik/phishing-detection&type=Date" />
-    </picture>
-  </a>
-</div>
-
-<!-- [![Community Growth Trajectory](https://api.star-history.com/svg?repos=abhizaik/phishing-detection&type=date&legend=top-left)](https://www.star-history.com/#abhizaik/phishing-detection&type=date&legend=top-left) -->
+Copyright © Beyond Marks AI Academy. See [LICENSE](LICENSE).

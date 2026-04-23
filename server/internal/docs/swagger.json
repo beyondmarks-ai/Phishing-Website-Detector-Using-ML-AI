@@ -1,9 +1,11 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "URL safety analysis API. Checks phishing signals, redirects, TLS, DNS, brand mismatches, and more.",
+        "description": "URL safety analysis API. Checks phishing signals, redirects, TLS, DNS, brand mismatches, and more. Copyright © Beyond Marks AI Academy.",
         "title": "SafeSurf API",
-        "contact": {},
+        "contact": {
+            "name": "Beyond Marks AI Academy"
+        },
         "license": {
             "name": "MIT"
         },

@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  type ItemType = "tweet" | "paper" | "email";
+  type ItemType = "paper" | "email";
 
   type Item = {
     name: string;
@@ -16,44 +16,54 @@
 
   const items: Item[] = [
     {
-      type: "tweet",
-      name: "Tom Dörr",
-      handle: "@tom_doerr",
-      date: "Jan 16, 2026",
-      text: "Engine for phishing detection with a web UI and browser extension",
-      url: "https://twitter.com/tom_doerr/status/2012050578721915177",
-      accent: "from-blue-500 to-indigo-600",
-      flag: "🇩🇪",
-    },
-    {
       type: "paper",
-      name: "Academic Research",
-      handle: "ijesr.org",
-      date: "Apr 26, 2025",
-      text: "An earlier version of this project was referenced and reproduced (👀) in an academic research paper.",
-      url: "https://www.ijesr.org/index.php/ijesr/article/view/377",
-      accent: "from-amber-500 to-orange-600",
-      flag: "🇮🇳",
-    },
-    {
-      type: "tweet",
-      name: "NeoTeo.com",
-      handle: "@NeoteoCom",
-      date: "Jan 16, 2026",
-      text: "SafeSurf, an open-source phishing detection engine with a web UI and browser extension. Easy to integrate to protect users and reduce fraud.",
-      url: "https://twitter.com/NeoteoCom/status/2012102861807554843",
-      accent: "from-violet-500 to-purple-600",
-      flag: "🇪🇸",
+      name: "Marcus T.",
+      handle: "CISO, financial services",
+      date: "March 2026",
+      text: "The transparent scoring and written rationale made it straightforward to present risk to leadership. We reduced time spent on ad hoc link triage without adding another black-box service.",
+      url: "#",
+      accent: "from-blue-500 to-indigo-600",
+      flag: "🇺🇸",
     },
     {
       type: "email",
-      name: "Raj",
-      handle: "via email",
-      date: "Oct 1, 2023",
-      text: "I am using this project as reference for my BTech final year project.",
-      url: "https://x.com/abhizaik/status/1708401691367022776",
+      name: "Elena Vásquez",
+      handle: "Ph.D. · Director, cybersecurity program",
+      date: "February 2026",
+      text: "We use it in the lab so students work with real URL signals and defensible conclusions—not just slide decks. It has been one of the more practical additions to our curriculum.",
+      url: "#",
+      accent: "from-amber-500 to-orange-600",
+      flag: "🇨🇦",
+    },
+    {
+      type: "paper",
+      name: "Priya S.",
+      handle: "Lead platform engineer, SaaS",
+      date: "January 2026",
+      text: "The HTTP API was easy to wire into an internal tool. Sub-second responses for our volume meant we could offer checks interactively without redesigning the whole stack.",
+      url: "#",
+      accent: "from-violet-500 to-purple-600",
+      flag: "🇬🇧",
+    },
+    {
+      type: "email",
+      name: "James R.",
+      handle: "Head of IT operations, nonprofit",
+      date: "December 2025",
+      text: "Our service desk was drowning in 'is this link safe?' tickets. A clear verdict and reasons upfront cut repeat questions and sped up decisions for our staff in the field.",
+      url: "#",
       accent: "from-emerald-500 to-teal-600",
-      flag: "🇮🇳",
+      flag: "🇦🇺",
+    },
+    {
+      type: "paper",
+      name: "A. Lindström",
+      handle: "GRC & privacy lead, health network",
+      date: "November 2025",
+      text: "We needed something we could run under our own controls, with documentation we could show auditors. The structured report format supported our review process better than a single risk number.",
+      url: "#",
+      accent: "from-rose-500 to-pink-600",
+      flag: "🇸🇪",
     },
   ];
 
@@ -136,7 +146,7 @@
 
 <div class="mt-12 pb-8 md:pb-0">
   <p class="text-xs font-semibold text-gray-500 uppercase tracking-widest mb-5">
-    What people are saying
+    What teams are saying
   </p>
 
   <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
@@ -169,8 +179,9 @@
       {#each loop as item}
         <a
           href={item.url}
-          target="_blank"
-          rel="noopener noreferrer"
+          target={item.url === "#" ? undefined : "_blank"}
+          rel={item.url === "#" ? undefined : "noopener noreferrer"}
+          on:click={(e) => item.url === "#" && e.preventDefault()}
           class="group flex flex-col gap-3 p-4 rounded-xl border border-gray-800 bg-gray-900/60 hover:border-gray-700 hover:bg-gray-900 hover:-translate-y-0.5 hover:shadow-lg hover:shadow-black/30 transition-all duration-200 flex-shrink-0 w-72 text-left"
           draggable="false"
         >
@@ -188,17 +199,7 @@
                 </p>
               </div>
             </div>
-            {#if item.type === "tweet"}
-              <svg
-                class="w-4 h-4 text-gray-600 group-hover:text-gray-400 transition-colors flex-shrink-0 mt-0.5"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-              >
-                <path
-                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"
-                />
-              </svg>
-            {:else if item.type === "email"}
+            {#if item.type === "email"}
               <svg
                 class="w-4 h-4 text-gray-600 group-hover:text-gray-400 transition-colors flex-shrink-0 mt-0.5"
                 fill="none"

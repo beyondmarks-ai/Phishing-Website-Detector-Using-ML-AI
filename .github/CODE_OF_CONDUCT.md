@@ -26,9 +26,7 @@ We are committed to fostering a friendly, safe, and inclusive environment.
 
 ##  Reporting
 
-If you witness or experience unacceptable behavior, report it by email:
-
- `hi@abhizaik.com`
+If you witness or experience unacceptable behavior, report it to Beyond Marks AI Academy program staff through your official course or lab contact channel.
 
 Reports are confidential and will be handled with discretion.
 

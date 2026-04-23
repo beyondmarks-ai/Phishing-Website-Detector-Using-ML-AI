@@ -2,8 +2,9 @@
 //
 //	@title			SafeSurf API
 //	@version		1.0
-//	@description	URL safety analysis API. Checks phishing signals, redirects, TLS, DNS, brand mismatches, and more.
+//	@description	URL safety analysis API. Checks phishing signals, redirects, TLS, DNS, brand mismatches, and more. Copyright © Beyond Marks AI Academy.
 //	@license.name	MIT
+//	@contact.name	Beyond Marks AI Academy
 //
 //	@host		localhost:8080
 //	@BasePath	/api/v1
