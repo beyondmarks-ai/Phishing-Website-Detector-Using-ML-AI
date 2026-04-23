@@ -1,6 +1,8 @@
 <div align="center">
 
-# Phishing Detection Engine (Open-Source, Real-Time URL Scanner)
+# Phishing-Website-Detector-Using-ML-AI
+
+**Phishing Detection Engine** — open-source, real-time URL scanner
 
 Fast, explainable phishing detection for URLs — real-time scoring, clear verdicts, full transparency.
 
@@ -10,7 +12,7 @@ Open-source and production-ready. Analyze URLs in under a second with transparen
 [![Svelte](https://img.shields.io/badge/Svelte-5-orange?logo=svelte)](https://svelte.dev)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-[⚡ Quick Start](#quick-start) · [🏛 Architecture](#architecture) · [📚 Docs](#documentation) · [🤝 Contributing](#contributing) · [🌍 Community](#community)
+[⚡ Quick Start](#quick-start) · [🏛 Architecture](#architecture) · [📚 Docs](#documentation) · [🤝 Contributing](#contributing) · [Copyright](#copyright)
 
 </div>
 
