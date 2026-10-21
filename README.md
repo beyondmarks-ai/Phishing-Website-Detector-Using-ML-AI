@@ -380,3 +380,10 @@ Bug reports, feature requests, and code contributions are welcome. See [CONTRIBU
 ## Copyright
 
 Copyright © Beyond Marks AI Academy. See [LICENSE](LICENSE).
+
+<!-- beyond-marks-credit:start -->
+---
+### Built by Beyond Marks AI Academy
+
+Developed by **Rakesh Kumar** at [Beyond Marks AI Academy](https://beyondmarks.ai).
+<!-- beyond-marks-credit:end -->
